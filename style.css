@@ -1,0 +1,36 @@
+
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+
+.col{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+}
+
+.col1{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+    flex-grow: 1 ;
+}
+
+.col2{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+}
+.row{
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1em;
+}
