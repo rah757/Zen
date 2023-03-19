@@ -1,2 +1,2 @@
 # mp
-mini pr
+mini proj
