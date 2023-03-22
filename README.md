@@ -1,2 +1,2 @@
 # mp
-mini proj
+mini project
