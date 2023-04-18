@@ -13,9 +13,9 @@
                 <a><button type="button" class="toggle-btn" onclick="register()">Register</button></a>
             </div>
             <div class="social-icons">
-                <img src="fb.png">
-                <img src="ig.png">
-                <img src="tw.png">
+                <img src="{{ url_for('static', filename='images/fb.png') }}">
+                <img src="{{ url_for('static', filename='images/ig.png') }}">
+                <img src="{{ url_for('static', filename='images/tw.png') }}">
             </div>
             <form method="POST" id="login" class="input-group">
                 <input type="text" name="uname" class="input-field" placeholder="Username" required>
@@ -27,11 +27,12 @@
                 <input type="text" name="uname" class="input-field" placeholder="Username" required>
                 <input type="email" name="mail" class="input-field" placeholder="Email ID" required>
                 <input type="text" name="passw" class="input-field" placeholder="Password" required>
-                <input type="checkbox" class="check-box"><span>I agree to the Terms and Conditions</span>
-                <button type="submit" class="submit-btn">Register</button>       
+                <input type="checkbox" id="terms-checkbox" required>
+                <label for="terms-checkbox">I agree to the terms and conditions</label>
+                <button type="submit" class="submit-btn" onclick="validateForm()">Register</button>
+                   
             </form>
         </div>
-        
     </div>
     <script>
         var x= document.getElementById("login");
@@ -49,6 +50,13 @@
             y.style.left= "450px";
             z.style.left= "0px";
         }
+
+        function validateForm() {
+        if (!document.getElementById("terms-checkbox").checked) {
+        alert("Please agree to the terms and conditions before submitting.");
+        return false;
+        }
+}
 
     </script> 
   </body>

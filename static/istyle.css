@@ -31,3 +31,11 @@
     border: solid 1px;
     min-height:267.50px;
 }
+
+li {
+  padding: 0.5em;
+}
+
+li.finished {
+  text-decoration: line-through;
+}

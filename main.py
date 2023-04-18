@@ -79,6 +79,11 @@ def logout():
     session.pop('username', None)
     return redirect(url_for('login'))
 
+@app.route('/questions')
+def questions():
+    return render_template('questions.html')
+
+
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()

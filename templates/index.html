@@ -28,7 +28,7 @@
                 <div class="mid row">
                     <div class="c1 col col-8"> wellness chart here </div>
                     <div class=" col col-4"> 
-                        <div class="c1 rowby2">how are u doing button</div>
+                        <div class="c1 rowby2"><a href="/questions"><button type="button" class="toggle-btn"">How are you doing today?</button></a></div>
                         <div class="c1 rowby2">how did u sleep yesterday button</div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 <input type="text" id="input" placeholder="Add item...">
                 <button onclick="addItem()">Add</button>
               <ul id="list"></ul>
-                   <script src="script.js"></script>
+                   <script src="{{ url_for('static', filename='js/scripttodo.js') }}"></script>
                 </div>
 
         </div>
