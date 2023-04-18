@@ -1,7 +1,7 @@
 <html> 
   <head>
     <title>Login and Registration</title> 
-    <link rel="stylesheet" href="kkstyle.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='kkstyle.css') }}">
   </head>
 
   <body> 
@@ -9,24 +9,24 @@
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                <a href="/login"><button type="button" class="toggle-btn" onclick="login()">Log In</button></a>
+                <a href="/register"><button type="button" class="toggle-btn" onclick="register()">Register</button></a>
             </div>
             <div class="social-icons">
                 <img src="fb.png">
                 <img src="ig.png">
                 <img src="tw.png">
             </div>
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="User ID" required>
-                <input type="text" class="input-field" placeholder="Password" required>
+            <form method="POST" id="login" class="input-group">
+                <input type="text" name="uname" class="input-field" placeholder="Username" required>
+                <input type="text" name="passw" class="input-field" placeholder="Password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
                 <button type="submit" class="submit-btn">Log In</button>       
             </form>
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User ID" required>
-                <input type="email" class="input-field" placeholder="Email ID" required>
-                <input type="text" class="input-field" placeholder="Password" required>
+            <form method="POST" id="register" class="input-group">
+                <input type="text" name="uname" class="input-field" placeholder="Username" required>
+                <input type="email" name="mail" class="input-field" placeholder="Email ID" required>
+                <input type="text" name="passw" class="input-field" placeholder="Password" required>
                 <input type="checkbox" class="check-box"><span>I agree to the Terms and Conditions</span>
                 <button type="submit" class="submit-btn">Register</button>       
             </form>

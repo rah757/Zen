@@ -1,0 +1,6 @@
+{% block title %} View all users {% endblock %}
+{% block content %}
+    {% for item in values %}
+        <p>Name: {{item.username}} Email: {{item.email}} Password: {{item.password}} </p>
+    {% endfor %}
+{% endblock %}
