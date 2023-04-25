@@ -21,7 +21,7 @@
                 {% endif %}
                 {% endblock %}
             </div>
-            <div class="c1 col col-2"><p>insertUserImageHere</p></div>
+            <div class="c1 col col-2"><a href="/logout"><button type="button" class="toggle-btn"">Logout</button></a></div>
         </div>
         <div class="tall row">
            <div class="col col-8">
@@ -29,7 +29,7 @@
                     <div class="c1 col col-8"> wellness chart here </div>
                     <div class=" col col-4"> 
                         <div class="c1 rowby2"><a href="/questions"><button type="button" class="toggle-btn"">How are you doing today?</button></a></div>
-                        <div class="c1 rowby2">how did u sleep yesterday button</div>
+                        <div class="c1 rowby2"><a href="/sleep"><button type="button" class="toggle-btn"">How much hours did you sleep today?</button></a></div>
                     </div>
                 </div>
                 <div class="mid row">
@@ -46,7 +46,7 @@
               <ul id="list"></ul>
                    <script src="{{ url_for('static', filename='js/scripttodo.js') }}"></script>
                 </div>
-
+                
         </div>
         </div>
     </div>
