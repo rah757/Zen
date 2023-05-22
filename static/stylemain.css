@@ -44,6 +44,8 @@ body{
     display: flex;
     justify-content: center;
     width: 25vw;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .cardflex{
@@ -82,9 +84,25 @@ body{
     flex-basis: 45%;
 }
 
+.calendar{
+    flex-basis: 20%;
+}
+
+.weather{
+    flex-basis: 45%;
+}
+
+.todo{
+    flex-basis: 35%;
+}
+
+
+
 .b{
     border: 2px solid black;
 }
+
+
 
 
 
