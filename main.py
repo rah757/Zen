@@ -132,12 +132,9 @@ def sleep():
         new_entry = Sleep(user_id=user_id, sleep=sleep)
         db.session.add(new_entry)
         db.session.commit()
-
-
+        
         return redirect(url_for("home"))
-
     return render_template('sleep.html')
-
      
 
 @app.route('/logout')
@@ -169,7 +166,7 @@ if __name__ == "__main__":
 
 
 
-     #Entry.query.delete()
+        #Entry.query.delete()
         #db.session.commit()
         #Entry.query.filter_by(user_id=1).delete()                                                                                      #deleters
         #db.session.commit()
