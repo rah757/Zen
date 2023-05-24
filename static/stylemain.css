@@ -32,6 +32,13 @@ h2{
     margin-top: -5px;
 }
 
+h3{
+    font-size: 39px;
+    color: white;
+    padding-bottom: 11px;
+    padding-right: 8px;
+}
+
 .n1{
     flex-basis: 80%;
     align-content: flex-start;
@@ -119,11 +126,6 @@ h2{
     margin-bottom: 0px;
 }
 
-a{
-    display: flex;
-    text-decoration: none;
-}
-
 p{
     font-size: 20px;
     font-weight: 500;
@@ -192,6 +194,7 @@ p{
     flex-basis: 55%;
     background-color: #F9E2DB;
     align-items: center;
+    justify-content: center;
 }
 
 .r1{
@@ -281,9 +284,19 @@ p{
     margin-top: 0;
 }
 
+a{
+    display: flex;
+    text-decoration: none;
+}
 
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
 
-
+  .left-notes p{
+    padding-top: 10px;
+    padding-left: 10px;
+  }
 
 
 

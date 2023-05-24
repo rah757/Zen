@@ -36,7 +36,7 @@
                     </div>
                     <div class="left-type1 card2 cardflex clear">
                         <a class="half" href="/questions"> <p>How are you feeling today? &nbsp  &#x27F6</p> </button></a>
-                        <button class="half"> half2 </button>
+                        <button class="half"> <p> Meet the team, click here! &#128515 </p> </button>
                     </div>
                 </div>
                 <div class="left-header">
@@ -55,7 +55,7 @@
                 </div>
                 <div class="left-type1">
                     <div class="left-type1s card1 sleep">
-                        sleep card
+                        <h3>10h</h3>
                     </div>
                     <div class="left-type1s card2">
                         sleepy tips
@@ -66,7 +66,12 @@
                 </div>
                 <div class="left-type1">
                     <div class="left-notes">
-                        notesuuuuuuuuuuuuuuuuwu
+                        <ul>
+                            <li contentEditable="true">Write</li>
+                            <li contentEditable="true">your</li>
+                            <li contentEditable="true">notes</li>
+                            <li contentEditable="true">here!</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="left-header">
@@ -77,9 +82,9 @@
                         spot tea 5
                     </div>
                     <div class="left-type1 card2 cardflex clear">
-                        <button class="third"> P L A Y  A R O U N D  A  D R U M K I T </button>
-                        <button class="third"> third2 </button>
-                        <button class="third"> third3 </button>
+                        <a class="third" href="https://www.google.com/"><p> Play around a drumkit we made! </p> </a>
+                        <a class="third"> <p> Third2 </p> </a>
+                        <a class="third"> <p> Third3 </p> </a>
                     </div>
                 </div>
             </div>
@@ -97,6 +102,25 @@
         </div>
     </div>
 </div>
+
+<script>
+    const editables = document.querySelectorAll("[contenteditable]");
+
+    // save edits
+    editables.forEach(el => {
+    el.addEventListener("blur", () => {
+    localStorage.setItem("dataStorage-" + el.id, el.innerHTML);
+  })
+});
+
+    // once on load
+    for (var key in localStorage) {
+    if (key.includes("dataStorage-")) {
+    const id = key.replace("dataStorage-","");
+    document.querySelector("#" + id).innerHTML = localStorage.getItem(key);
+  }
+}
+</script>
 </body>
 
 </html>
