@@ -1,87 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='istyle.css') }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Document</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='stylemain.css') }}"> -->
+    <link rel="stylesheet" href="../static/stylemain.css">
+    <title>Zen~</title>
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="c1 col col-10">
-                <h1>Zen.</h1>
-                {% block content %}
-                {% if username %}
-                  <p>Hello {{ username }}, How are you doing today?</p>
-                {% else %}
-                  <p>You are not logged in. Please <a href="{{ url_for('login') }}">log in</a>.</p>
-                {% endif %}
-                {% endblock %}
-            </div>
-            <div class="c1 col col-2"><a href="/logout"><button type="button" class="toggle-btn"">Logout</button></a></div>
-        </div>
-        <div class="tall row">
-           <div class="col col-8">
-                <div class="mid row">
-                    <div class="c1 col col-8">
-                        <div style="max-width: 1000px;">
-                            <canvas id="myChart"></canvas>
-                          </div>
-                    
-                    </div>
-                    <div class=" col col-4"> 
-                        <div class="c1 rowby2"><a href="/questions"><button type="button" class="toggle-btn"">How are you doing today?</button></a></div>
-                        <div class="c1 rowby2"><a href="/sleep"><button type="button" class="toggle-btn"">How much hours did you sleep today?</button></a></div>
-                    </div>
-                </div>
-                <div class="mid row">
-                    <div class="col col-6">stress level?</div>
-                    <div class="col col-6">sleep chart</div>
-                </div>
-            </div>
-            <div class="col col-4">
-                <div class="col col-11">
 
-                   <h3>To-Do List</h3>
-                <input type="text" id="input" placeholder="Add item...">
-                <button onclick="addItem()">Add</button>
-              <ul id="list"></ul>
-                   <script src="{{ url_for('static', filename='js/scripttodo.js') }}"></script>
-                </div>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                          
-                          <script>
-                    
-                            let LineData = [50,69,72,81,24,55]
-                    
-                            const ctx = document.getElementById('myChart');
-                          
-                            new Chart(ctx, {
-                              type: 'line',
-                              data: {
-                                labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7'],
-                                datasets: [{
-                                  label: 'This is your wellness rating, out of 100',
-                                  data: LineData,
-                                  borderWidth: 1
-                                }]
-                              },
-                              options: {
-                                scales: {
-                                  y: {
-                                    beginAtZero: true
-                                  }
-                                }
-                              }
-                            });
-                          </script>
-                
+<body>
+    <div class="big-container">
+        <div class="hello-container">
+            <div class="n1">
+                <h1>
+                    yen
+                </h1>
+                <p>Hello rah, how are you doing?</p>
+                <!-- {% block content %}
+                {% if username %}
+                  <h2>Hello {{ username }}, How are you doing today?</h2>
+                {% else %}
+                  <h2>You are not logged in. Please <a href="{{ url_for('login') }}">log in</a>.</h2>
+                {% endif %}
+                {% endblock %} -->
+            </div>
+            <div class="n2">    
+                <a href="/logout"><button type="button" class="logout"">logout</button></a>
+            </div>
         </div>
+        <br>
+        <div class="main-container">
+            <div class="left-container">
+                <div class="left-type1">
+                    <div class="left-type1 card1 r1">
+                        motivation 4 u
+                    </div>
+                    <div class="left-type1 card2 cardflex clear">
+                        <a class="half" href="/questions"> <p>How are you feeling today? &nbsp  &#x27F6</p> </button></a>
+                        <button class="half"> <p> Meet the team, click here! &#128515 </p> </button>
+                    </div>
+                </div>
+                <div class="left-header">
+                    <h2>Your stats here</h2>
+                </div>
+                <div class="left-type1">
+                    <div class="left-type1 card1">
+                        bar chart stats
+                    </div>
+                    <div class="left-type1 card2">
+                        Nice 
+                    </div>
+                </div>
+                <div class="left-header" id="sleep">
+                    <h2>Sleep tracking</h2>
+                </div>
+                <div class="left-type1">
+                    <div class="left-type1s card1 sleep">
+                        <h3>10h</h3>
+                    </div>
+                    <div class="left-type1s card2">
+                        sleepy tips
+                    </div>
+                </div>
+                <div class="left-header">
+                    <h2>Keep your notes here!</h2>
+                </div>
+                <div class="left-type1">
+                    <div class="left-notes">
+                        <ul>
+                            <li contentEditable="true">Write</li>
+                            <li contentEditable="true">your</li>
+                            <li contentEditable="true">notes</li>
+                            <li contentEditable="true">here!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left-header">
+                    <h2>Feeling depres? Try these out!</h2>
+                </div>
+                <div class="left-type1">
+                    <div class="left-type1 card1">
+                        spot tea 5
+                    </div>
+                    <div class="left-type1 card2 cardflex clear">
+                        <a class="third" href="https://www.google.com/"><p> Play around a drumkit we made! </p> </a>
+                        <a class="third"> <p> Third2 </p> </a>
+                        <a class="third"> <p> Third3 </p> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class ="calendar">
+                    calendar
+                </div> 
+                <div class ="weather rbg1">
+                    weth
+                </div>
+                <div class ="todo rbg2">
+                    todolist
+                </div>
+            </div>
         </div>
     </div>
 </div>
 </body>
+
 </html>

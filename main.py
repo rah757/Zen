@@ -20,7 +20,7 @@ class user(db.Model):
     password = db.Column(db.String(100))
     entries = db.relationship('Entry', backref='user', lazy=True)
 
-    def __init__(self, user_id, username, email, password):
+    def __init__(self, username, email, password):
         self.username = username
         self.email = email
         self.password = password
@@ -93,7 +93,7 @@ def register():
         db.session.commit()
 
         return redirect(url_for("login"))
-    return render_template("login2.html")
+    return render_template("register.html")
 
 @app.route("/questions", methods=["GET","POST"])
 def questions():
