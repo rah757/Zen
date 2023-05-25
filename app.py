@@ -2,6 +2,8 @@ from flask import Flask, redirect, url_for, render_template, request, session, f
 from datetime import timedelta
 from flask_sqlalchemy import SQLAlchemy
 
+db = SQLAlchemy()
+
 app = Flask(__name__)
 
 app.secret_key = "chickenfry"
@@ -10,8 +12,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
-
-db = SQLAlchemy(app)
+db.init_app(app)
 
 class user(db.Model):
     _id = db.Column(db.Integer, primary_key=True)
@@ -25,8 +26,6 @@ class user(db.Model):
         self.email = email
         self.password = password
    
-
-
 class Entry(db.Model):
     entry_id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user._id'), nullable=False)
@@ -45,22 +44,18 @@ class Sleep(db.Model):
         self.user_id = user_id
         self.sleep = sleep
 
-
 @app.route('/')
 def home():
     if 'username' in session:
         return render_template('index.html', username=session['username'])
 
-
     else:
         username = None  # add this line to define the variable
         return redirect(url_for('login'))
-    
 
 @app.route("/view")
 def view():
     return render_template("view.html", values=user.query.all() ,entries = Entry.query.all(), sleeps = Sleep.query.all())
-
 
 @app.route("/login",methods=["GET", "POST"])
 def login():
@@ -117,7 +112,6 @@ def questions():
         db.session.add(new_entry)
         db.session.commit()
 
-
         return redirect(url_for("home"))
 
     return render_template('questions.html')
@@ -135,7 +129,6 @@ def sleep():
         
         return redirect(url_for("home"))
     return render_template('sleep.html')
-     
 
 @app.route('/logout')
 def logout():
@@ -145,26 +138,10 @@ def logout():
     return redirect(url_for('login'))
 
 
-
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
     app.run(debug=True)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         #Entry.query.delete()
         #db.session.commit()
