@@ -9,6 +9,8 @@ sliders.forEach(function(slider) {
 	slider.oninput = function() {
 		output.innerHTML = this.value;
 	};
+
+
 });
 
 
