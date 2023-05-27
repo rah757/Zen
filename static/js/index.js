@@ -9,7 +9,7 @@ function changeImage(imgname, imgdesc)
 
 function imgOne()
 {
-	changeImage("84bykpsrir1a1.jpg", "Spider-Man: Into the Spider-Verse");
+	changeImage("ezOgN0q.jpg", "Sunset-ish");
 }
 
 function imgTwo()
@@ -19,5 +19,5 @@ function imgTwo()
 
 function imgThree()
 {
-	changeImage("ezOgN0q.jpg", "Sunset-ish");
+	changeImage("84bykpsrir1a1.jpg", "Spider-Man: Into the Spider-Verse");
 }
