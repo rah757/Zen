@@ -15,4 +15,4 @@ build/
 
 .sass-cache
 
-users.sqlite3
+data.sqlite3
