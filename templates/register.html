@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block body %}
+<form method="POST" class="container pad-top" style="padding-right: 20%; padding-left: 20%;">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="{{ category }} alert alert-danger" role="alert">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+  <div class="mb-3">
+    <label for="uname-input" class="form-label">Username</label>
+    <input type="username" name="uname" class="form-control" id="uname-input" required>
+    <div id="unameHelp" class="form-text">Has to be unique and only contain letters, numbers and underscores.</div>
+  </div>
+  <div class="mb-3">
+    <label for="email-input" class="form-label">Email address</label>
+    <input type="email" name="email" class="form-control" id="email-input" aria-describedby="emailHelp" required>
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="password-input" class="form-label">Password</label>
+    <input type="password" name="passwd" class="form-control" id="passwd-input" required>
+  </div>
+  <div class="mb-3">
+    <label for="password-repeat" class="form-label">Repeat password</label>
+    <input type="password" name="passwdr" class="form-control" id="passwd-repeat" required>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="checkbox-input" required>
+    <label class="form-check-label" for="checkbox-input">I accept the terms and conditions</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+{% endblock %}
