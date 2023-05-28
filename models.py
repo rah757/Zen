@@ -42,7 +42,7 @@ class RolesUsers(Base):
 # Model for all the questions over at /questions
 class Questions(Base):
     __tablename__ = 'questions'
-    uname = Column(Integer, primary_key=True)
+    username = Column(Integer, primary_key=True)
     q0 = Column(Integer)
     q1 = Column(Integer)
     q2 = Column(Integer)

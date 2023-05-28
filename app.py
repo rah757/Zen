@@ -32,7 +32,8 @@ from models import User, Role
 
 app = Flask(__name__)
 
-app.config['DEEBUG'] = True
+app.config['TESTING'] = True
+app.config['DEBUG'] = True
 
 app.config['SECRET_KEY'] = "chickenfry"
 
