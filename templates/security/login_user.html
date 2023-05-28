@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+<form method="POST" class="container pad-top" style="padding-right: 20%; padding-left: 20%;">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="{{ category }} alert alert-danger" role="alert">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+  <div class="mb-3">
+    {{ login_user_form.hidden_tag() }}
+    <label for="uname-input" class="form-label">Username</label>
+    {{ login_user_form.username(class="form-control", id="uname-input") }}
+  </div>
+  <div class="mb-3">
+    <label for="passwd-input" class="form-label">Password</label>
+    {{ login_user_form.password(class="form-control", id="passwd-input") }}
+  </div>
+  <div class="mb-3 form-check">
+    {{ login_user_form.remember(class="form-check-input", id="checkbox-input") }}
+    {{ login_user_form.remember.label(for="checkbox-input") }}
+  </div>
+  {{ login_user_form.submit(class="btn btn-success") }}
+</form>
+{% endblock %}
