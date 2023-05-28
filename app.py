@@ -20,9 +20,7 @@ from flask_security import (
 #    roles_accepted,
     UsernameUtil,
     PasswordUtil,
-    UserDatastore,
 )
-# from flask_security.UserDatastore import create_user
 
 from datetime import timedelta
 from flask_sqlalchemy import SQLAlchemy
@@ -68,6 +66,7 @@ def register():
             if request.form["passwd"] == request.form["passwdr"]:
                 password=hash_password(request.form["passwd"])
                 user = app.security.datastore.create_user(username=uname, password=password)
+                db_session.commit()
                 return redirect('/')
             else:
                 flash("Passwords do not match")
