@@ -54,12 +54,6 @@ app.security = Security(app, user_datastore)
 with app.app_context():
     init_db()
 
-# To remove database session at end of requests/app shutdown
-# See https://flask.palletsprojects.com/en/2.3.x/patterns/sqlalchemy/
-# @app.teardown_appcontext
-# def shutdown_session(exception=None):
-#     db_session.remove()
-
 # Registering views using app.route
 # See https://flask.palletsprojects.com/en/2.3.x/api/#flask.Flask.route
 @app.route('/')
@@ -89,6 +83,8 @@ def register():
 def questions():
     pass
 
+# To remove database session at end of requests/app shutdown
+# See https://flask.palletsprojects.com/en/2.3.x/patterns/sqlalchemy/
 @app.teardown_appcontext
 def shutdown_session(exception=None):
     db_session.remove()
