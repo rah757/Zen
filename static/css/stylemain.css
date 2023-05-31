@@ -270,7 +270,7 @@ p {
 }
 
 .sleep {
-    background-image: url('./images/sleep_backgr.png');
+    background-image: url('../images/sleep_backgr.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
