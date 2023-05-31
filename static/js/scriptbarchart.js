@@ -31,6 +31,9 @@ const data = {
     }]
 };
 
+for (let i = 0; i < 7; i++) {
+    data["datasets"][0]["data"][i] = entries[i];
+}
 
 //configuration here    
 const config = {
