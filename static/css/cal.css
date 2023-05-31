@@ -1,0 +1,124 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 10px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 25px;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+  width: 369px;
+  min-height: 369px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 1px 1px 5.69px;
+}
+
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 0px;
+  justify-content: space-between;
+  margin-bottom: -15px;
+}
+
+.current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+header .icons span{
+  height: 30px;
+  width: 30px;
+  margin: 0 1px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 38px;
+  border-radius: 50%;
+  padding: 7px;
+  padding-right: 12.2px;
+  padding-left: 12.2px;
+  background:white;
+}
+
+header .icons span:hover{
+  background: #f2f2f2;
+}
+
+.calendar{
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.calendar ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.calendar .weeks{
+  margin-right: 13px;
+  margin-bottom: -13px;
+}
+
+.calendar .weeks li{
+  font-weight: 500;
+}
+
+.calendar .days{
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-indent: 3px;
+}
+
+
+.calendar ul li{
+  width: calc(100%/7);
+  position: relative;
+}
+
+.calendar .days li{
+  cursor: pointer;
+  margin-top: 25px;
+  z-index: 1;
+}
+
+.calendar .days li .inactive{
+  color:#aaa;
+}
+
+.calendar .days li .active{
+  color:#fff;
+}
+
+.calendar .days li::before{
+  position: absolute;
+  content: "";
+  height: 35px;
+  width: 35px;
+  top: 30%;
+  left: 20%;
+  transform: translate(-51%, -40%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.calendar .days li:hover::before{
+  background: #f2f2f2;
+}
+
+.calendar .days li.active::before{
+  background: rgba(248, 181, 160, 0.9);
+  /* box-shadow: 0px 0px 3px;*/
+}

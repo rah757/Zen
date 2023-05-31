@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -11,6 +12,8 @@ html {
     background-color: white;
     border-radius: 25px;
 }
+=======
+>>>>>>> cal
 
 body {
     display: flex;
@@ -40,6 +43,7 @@ h2 {
 
 h1 {
     font-size: 40px;
+    padding-top: 10px;
 }
 
 h2 {
@@ -227,14 +231,13 @@ p {
     background-color: #F9E2DB;
 }
 
-.calendar {
+.cal {
     display: flex;
     flex-basis: 20%;
     border-radius: 25px;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #F9E2DB;
 }
 
 .weather {
@@ -379,6 +382,7 @@ a:active {
     justify-content: flex-start;
 }
 
+<<<<<<< HEAD
 iframe{
     border: none;
 }
@@ -391,3 +395,6 @@ iframe{
     -ms-overflow-style: none; 
     scrollbar-width: none; 
   } */
+=======
+
+>>>>>>> cal
