@@ -20,13 +20,6 @@
                     Zen
                 </h1>
                 <p>Hello {{ current_user.username }}, how are you doing?</p>
-                <!-- {% block content %}
-                {% if username %}
-                  <h2>Hello {{ username }}, How are you doing today?</h2>
-                {% else %}
-                  <h2>You are not logged in. Please <a href="{{ url_for('login') }}">log in</a>.</h2>
-                {% endif %}
-                {% endblock %} -->
             </div>
             <div class="n2">
                 <a href="/logout"><button type="button" class="logout"">logout</button></a>
@@ -106,7 +99,7 @@
         </div>
     </div>
     <div class="right-container">
-        <div class="calendar">
+        <div class="calendar calbg">
             calendar
         </div>
         <div class="weather rbg1">
