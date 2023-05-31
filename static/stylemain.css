@@ -1,14 +1,14 @@
-body{
+body {
     display: flex;
     font-family: 'Quicksand';
 }
 
-.big-container{
+.big-container {
     display: flex;
     flex-direction: column;
 }
 
-.hello-container{
+.hello-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,34 +19,35 @@ body{
     max-height: 110px;
 }
 
-h1,h2{
+h1,
+h2 {
     font-family: 'Quicksand', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
-h2{
+h2 {
     font-size: 23px;
     margin-top: -5px;
 }
 
-h3{
+h3 {
     font-size: 39px;
     color: white;
     padding-bottom: 9px;
     padding-right: 8px;
 }
 
-.n1{
+.n1 {
     flex-basis: 80%;
     align-content: flex-start;
     height: 120%;
     padding-left: 44px;
 }
 
-.n2{
+.n2 {
     flex-basis: 20%;
     height: 100%;
     display: flex;
@@ -54,7 +55,7 @@ h3{
     justify-content: flex-end;
 }
 
-.logout{
+.logout {
     padding: 0;
     border: none;
     font-family: 'Quicksand', sans-serif;
@@ -71,26 +72,26 @@ h3{
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.164))
 }
 
-.logout:hover{
+.logout:hover {
     background: #716f815d;
     cursor: pointer;
 }
 
-.main-container{
+.main-container {
     display: flex;
     padding-top: 20px;
     max-width: 98vw;
     padding-bottom: 20px;
 }
 
-.left-container{
+.left-container {
     display: flex;
     justify-content: center;
     width: 75vw;
     flex-direction: column;
 }
 
-.right-container{
+.right-container {
     display: flex;
     justify-content: center;
     width: 25vw;
@@ -98,11 +99,11 @@ h3{
     justify-content: space-evenly;
 }
 
-.cardflex{
+.cardflex {
     flex-direction: column;
 }
 
-.half{
+.half {
     flex: 1;
     border-radius: 25px;
     margin: 5px;
@@ -112,28 +113,28 @@ h3{
     padding: 0;
     border: none;
     text-decoration: none;
-    color:black;
+    color: black;
     font-family: 'Quicksand', sans-serif;
 }
 
 
 
-.half:nth-child(1){
+.half:nth-child(1) {
     margin-top: 0px;
 }
 
-.half:nth-child(2){
+.half:nth-child(2) {
     margin-bottom: 0px;
 }
 
-p{
+p {
     font-size: 20px;
     font-weight: 500;
     align-self: center;
     margin: auto;
 }
 
-.left-type1{
+.left-type1 {
     display: flex;
     justify-content: space-evenly;
     height: 250px;
@@ -144,28 +145,28 @@ p{
     margin-top: 0;
 }
 
-.left-header{
+.left-header {
     flex-basis: 90%;
     padding-top: 22px;
-    padding-left: 44px; 
+    padding-left: 44px;
 }
 
-.left-header-notes{
+.left-header-notes {
     flex-basis: 90%;
     padding-top: 33px;
-    padding-left: 44px; 
+    padding-left: 44px;
 }
 
-.left-notes{
+.left-notes {
     flex-basis: 100%;
-    height: 250px;  
+    height: 250px;
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 25px;
     padding: 15px;
     padding-bottom: 0px;
     padding-top: 5px;
-    
+
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -177,7 +178,7 @@ p{
     background-color: #FEEFCF;
 }
 
-.third{
+.third {
     flex: 1;
     border-radius: 25px;
     margin: 2.5px;
@@ -188,31 +189,31 @@ p{
     border: none;
 }
 
-.third:nth-child(1){
+.third:nth-child(1) {
     margin-top: 0px;
 }
 
-.third:nth-child(3){
+.third:nth-child(3) {
     margin-bottom: 0px;
 }
 
-.card1{
+.card1 {
     flex-basis: 55%;
     background-color: #F9E2DB;
     align-items: center;
     justify-content: center;
 }
 
-.r1{
-    background:linear-gradient(113.06deg, #F2E1C1 15.11%, rgba(246, 174, 153, 0.8) 88.91%);
+.r1 {
+    background: linear-gradient(113.06deg, #F2E1C1 15.11%, rgba(246, 174, 153, 0.8) 88.91%);
 }
 
-.card2{
+.card2 {
     flex-basis: 45%;
     background-color: #F9E2DB;
 }
 
-.calendar{
+.calendar {
     display: flex;
     flex-basis: 20%;
     border-radius: 25px;
@@ -222,7 +223,7 @@ p{
     background-color: #F9E2DB;
 }
 
-.weather{
+.weather {
     flex-basis: 45%;
     display: flex;
     border-radius: 25px;
@@ -232,7 +233,7 @@ p{
     margin-bottom: 10px;
 }
 
-.todo{
+.todo {
     flex-basis: 35%;
     display: flex;
     border-radius: 25px;
@@ -241,37 +242,34 @@ p{
     margin-top: 10px;
 }
 
-.rbg1{
-    background: linear-gradient(
-    208.02deg,
-    #fcdfd6 2.23%,
-    rgba(252, 223, 214, 0.1) 100%
-  );
+.rbg1 {
+    background: linear-gradient(208.02deg,
+            #fcdfd6 2.23%,
+            rgba(252, 223, 214, 0.1) 100%);
 }
 
-.rbg2{
-    background: linear-gradient(
-    208.02deg,
-    rgba(252, 223, 214, 0.1) 2.23%,
-    #fcdfd6 100%
-  );
+.rbg2 {
+    background: linear-gradient(208.02deg,
+            rgba(252, 223, 214, 0.1) 2.23%,
+            #fcdfd6 100%);
 }
 
-.clear{
-    background-color: white;   /* to make bg white */
+.clear {
+    background-color: white;
+    /* to make bg white */
 }
 
-.b{
+.b {
     border: 2px solid black;
 }
 
-.button{
+.button {
     padding: 0;
     border: none;
     background: none;
 }
 
-.sleep{
+.sleep {
     background-image: url('./images/sleep_backgr.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -279,7 +277,7 @@ p{
     background-color: white;
 }
 
-.left-type1s{
+.left-type1s {
     display: flex;
     justify-content: space-evenly;
     height: 269px;
@@ -290,23 +288,78 @@ p{
     margin-top: 0;
 }
 
-a{
+a {
     display: flex;
     text-decoration: none;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
     color: inherit;
-  }
+}
 
-  .left-notes p{
+.left-notes p {
     padding-top: 10px;
     padding-left: 10px;
-  }
+}
+
+
+/* bar graph */
+.chart{
+    width: 500px;
+    height: 250px;
+}
 
 
 
+/* to do list */
+.todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
 
+.todo ul{
+    padding: 0;
+}
+  
+.todo li{
+    padding: 0.5em;
+    font-weight: 500;
+}
+  
+.todo li.finished{
+    text-decoration: line-through;
+}
 
+.todo input{
+    all: unset;
+    background-color: rgba(248, 181, 160, 0.5);
+    border-radius: 25px;
+    height: 35px;
+    width: 250px;
+    padding-left: 18px;
+    margin-left: 10px;
+}
 
+.todo button{
+    all: unset;
+    cursor: pointer;
+    background-color: rgba(248, 181, 160, 0.5);
+    border-radius: 50px;
+    height: 35px;
+    width: 55px;
+    text-align: center;
+    padding-right: 1.5px;
+    margin-left: 5px;
+}
 
+.toDoDiv{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

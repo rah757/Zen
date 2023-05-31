@@ -29,85 +29,107 @@
                 {% endif %}
                 {% endblock %} -->
             </div>
-            <div class="n2">    
+            <div class="n2">
                 <a href="/logout"><button type="button" class="logout"">logout</button></a>
             </div>
         </div>
         <br>
-        <div class="main-container">
-            <div class="left-container">
-                <div class="left-type1">
-                    <div class="left-type1 card1 r1">
-                        motivation 4 u
-                    </div>
-                    <div class="left-type1 card2 cardflex clear">
-                        <a class="half" href="/questions"> <p>How are you feeling today? &nbsp  &#x27F6</p> </button></a>
-                        <button class="half"> <p> Meet the team, click here! &#128515 </p> </button>
-                    </div>
-                </div>
-                <div class="left-header">
-                    <h2>Your stats here</h2>
-                </div>
-                <div class="left-type1">
-                    <div class="left-type1 card1">
-                        bar chart stats
-                    </div>
-                    <div class="left-type1 card2">
-                        Nice 
-                    </div>
-                </div>
-                <div class="left-header" id="sleep">
-                    <h2>Sleep tracking</h2>
-                </div>
-                <div class="left-type1">
-                    <div class="left-type1s card1 sleep">
-                        <h3>10h</h3>
-                    </div>
-                    <div class="left-type1s card2">
-                        sleepy tips
-                    </div>
-                </div>
-                <div class="left-header-notes">
-                    <h2>Keep your notes here!</h2>
-                </div>
-                <div class="left-type1">
-                    <div class="left-notes">
-                        <ul>
-                            <li contentEditable="true">Write</li>
-                            <li contentEditable="true">your</li>
-                            <li contentEditable="true">notes</li>
-                            <li contentEditable="true">here!</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="left-header">
-                    <h2>Feeling depres? Try these out!</h2>
-                </div>
-                <div class="left-type1">
-                    <div class="left-type1 card1">
-                        spot tea 5
-                    </div>
-                    <div class="left-type1 card2 cardflex clear">
-                        <a class="third" href="https://www.google.com/"><p> Play around a drumkit we made! </p> </a>
-                        <a class="third"> <p> Third2 </p> </a>
-                        <a class="third"> <p> Third3 </p> </a>
-                    </div>
+        <div class=" main-container">
+                        <div class="left-container">
+                            <div class="left-type1">
+                                <div class="left-type1 card1 r1">
+                                    motivation 4 u
+                                </div>
+                                <div class="left-type1 card2 cardflex clear">
+                                    <a class="half" href="/questions">
+                                        <p>How are you feeling today? &nbsp &#x27F6</p>
+                        </button></a>
+                <a href="https://linktr.ee/zenmembers" class="half" >
+                    <p> Meet the team, click here! &#128515 </p>
+                </a>
+            </div>
+        </div>
+        <div class="left-header">
+            <h2>Your stats here</h2>
+        </div>
+        <div class="left-type1">
+            <div class="left-type1 card1">
+                <div> <!-- Bar Chart -->
+                    <canvas id="myChart" class="chart"></canvas>
                 </div>
             </div>
-            <div class="right-container">
-                <div class ="calendar">
-                    calendar
-                </div> 
-                <div class ="weather rbg1">
-                    weth
-                </div>
-                <div class ="todo rbg2">
-                    todolist
-                </div>
+            <div class="left-type1 card2">
+                Nice
+            </div>
+        </div>
+        <div class="left-header" id="sleep">
+            <h2>Sleep tracking</h2>
+        </div>
+        <div class="left-type1">
+            <div class="left-type1s card1 sleep">
+                <h3>10h</h3>
+            </div>
+            <div class="left-type1s card2">
+                sleepy tips
+            </div>
+        </div>
+        <div class="left-header-notes">
+            <h2>Keep your notes here!</h2>
+        </div>
+        <div class="left-type1">
+            <div class="left-notes">
+                <ul>
+                    <li contentEditable="true">Write</li>
+                    <li contentEditable="true">your</li>
+                    <li contentEditable="true">notes</li>
+                    <li contentEditable="true">here!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="left-header">
+            <h2>Feeling depres? Try these out!</h2>
+        </div>
+        <div class="left-type1">
+            <div class="left-type1 card1">
+                spot tea 5
+            </div>
+            <div class="left-type1 card2 cardflex clear">
+                <a class="third" href="https://rah757.github.io/learning-javascript-drum-kit/">
+                    <p> Play around a drumkit we made! </p>
+                </a>
+                <a class="third">
+                    <p> Third2 </p>
+                </a>
+                <a class="third">
+                    <p> Third3 </p>
+                </a>
             </div>
         </div>
     </div>
-</div>
+    <div class="right-container">
+        <div class="calendar">
+            calendar
+        </div>
+        <div class="weather rbg1">
+            weth
+        </div>
+        <div class="todo rbg2">
+            <h2>To-do list</h2>
+            <span>
+                <input type="text" id="input" placeholder="Add item...">
+                <button onclick="addItem()">Add</button>
+            </span>
+            <div class="toDoDiv">
+                <ul id="list"></ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/js/scriptbarchart.js"></script>
+    <script src="../static/js/scripttodo.js"></script>
 </body>
 
 </html>
