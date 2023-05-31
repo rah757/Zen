@@ -215,14 +215,13 @@ p {
     background-color: #F9E2DB;
 }
 
-.calendar {
+.cal {
     display: flex;
     flex-basis: 20%;
     border-radius: 25px;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #F9E2DB;
 }
 
 .weather {
@@ -367,4 +366,3 @@ a:active {
 }
 
 
-/* calendar */
