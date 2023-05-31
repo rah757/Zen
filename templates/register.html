@@ -1,7 +1,7 @@
 <html> 
   <head>
     <title>Login and Registration</title> 
-    <link rel="stylesheet" href="{{ url_for('static', filename='kkstyle.css') }}">
+    <link rel="stylesheet" href="../static/css/kkstyle.css">
   </head>
 
   <body onload="register()"> 
@@ -13,9 +13,9 @@
                 <a><button type="button" class="toggle-btn" onclick="register()">Register</button></a>
             </div>
             <div class="social-icons">
-                <img src="{{ url_for('static', filename='images/fb.png') }}">
-                <img src="{{ url_for('static', filename='images/ig.png') }}">
-                <img src="{{ url_for('static', filename='images/tw.png') }}">
+                <img src='../static/images/fb.png'>
+                <img src="../static/images/ig.png">
+                <img src="../static/images/tw.png">
             </div>
             <form method="POST" id="login" class="input-group">
                 <input type="text" name="uname" class="input-field" placeholder="Username" required>
