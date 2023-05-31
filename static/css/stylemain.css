@@ -227,7 +227,7 @@ p {
     flex-basis: 45%;
     display: flex;
     border-radius: 25px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
