@@ -18,15 +18,22 @@
                 <img src="{{ url_for('static', filename='images/tw.png') }}">
             </div>
             <form method="POST" id="login" class="input-group">
-                <input type="text" name="uname" class="input-field" placeholder="Username" required>
+                {{ login_user_form.hidden_tag() }}
+                {{ login_user_form.username(class="input-field", placeholder="Username") }}
+                {{ login_user_form.password(class="input-field", placeholder="Password") }}
+                {{ login_user_form.remember(class="form-check-input", id="checkbox-input") }}
+                {{ login_user_form.remember.label(for="checkbox-input") }}
+                {{ login_user_form.submit(class="submit-btn") }}
+<!--                <input type="text" name="uname" class="input-field" placeholder="Username" required>
                 <input type="text" name="passw" class="input-field" placeholder="Password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn">Log In</button>       
+                <button type="submit" class="submit-btn">Log In</button>       -->
             </form>
             <form method="POST" id="register" class="input-group">
                 <input type="text" name="uname" class="input-field" placeholder="Username" required>
                 <input type="email" name="mail" class="input-field" placeholder="Email ID" required>
-                <input type="text" name="passw" class="input-field" placeholder="Password" required>
+                <input type="password" name="passwd" class="input-field" placeholder="Password" required>
+                <input type="password" name="passwdr" class="input-field" placeholder="Password again" required>
                 <input type="checkbox" class="check-box"><span>I agree to the Terms and Conditions</span>
                 <button type="submit" class="submit-btn">Register</button>       
             </form>

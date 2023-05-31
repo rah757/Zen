@@ -19,14 +19,15 @@
             </div>
             <form method="POST" id="login" class="input-group">
                 <input type="text" name="uname" class="input-field" placeholder="Username" required>
-                <input type="text" name="passw" class="input-field" placeholder="Password" required>
+                <input type="text" name="login-passwd" class="input-field" placeholder="Password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn">Log In</button>       
+                <button type="submit" class="submit-btn">Log In</button>
             </form>
             <form method="POST" id="register" class="input-group">
                 <input type="text" name="uname" class="input-field" placeholder="Username" required>
                 <input type="email" name="mail" class="input-field" placeholder="Email ID" required>
-                <input type="text" name="passw" class="input-field" placeholder="Password" required>
+                <input type="password" name="passwd" class="input-field" placeholder="Password" required>
+                <input type="password" name="passwdr" class="input-field" placeholder="Password again" required>
                 <input type="checkbox" id="terms-checkbox" required>
                 <label for="terms-checkbox">I agree to the terms and conditions</label>
                 <button type="submit" class="submit-btn" onclick="validateForm()">Register</button>
