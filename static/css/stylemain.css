@@ -1,3 +1,16 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 body {
     display: flex;
     font-family: 'Quicksand';
@@ -246,6 +259,7 @@ p {
     background: linear-gradient(208.02deg,
             #fcdfd6 2.23%,
             rgba(252, 223, 214, 0.1) 100%);
+    background: none;
 }
 
 .rbg2 {
@@ -363,3 +377,16 @@ a:active {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
+iframe{
+    border: none;
+}
+/* 
+.iframe::-webkit-scrollbar {
+    display: none;
+}
+
+.iframe {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  } */
