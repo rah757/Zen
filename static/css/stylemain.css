@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     font-family: 'Quicksand';
@@ -26,6 +27,7 @@ h2 {
 
 h1 {
     font-size: 40px;
+    padding-top: 10px;
 }
 
 h2 {
@@ -363,3 +365,6 @@ a:active {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
+
+/* calendar */
