@@ -27,6 +27,8 @@ from datetime import timedelta
 from database import db_session, init_db
 from models import User, Role, Entry, Sleep
 
+from sqlalchemy import select
+
 app = Flask(__name__)
 
 app.config['TESTING'] = True
@@ -52,7 +54,11 @@ with app.app_context():
 @app.route('/')
 @login_required
 def home():
-    return render_template('index.html', username=current_user.username)
+    values = []
+    for entry in db_session.execute(select(Entry.health).where(Entry.user_id == current_user._id)):
+        values.append(entry[0])
+
+    return render_template('index.html', username=current_user.username, values=values)
 
 @app.route("/view")
 def view():
@@ -92,7 +98,7 @@ def questions():
         q8 = int(request.form['q8'])
         q9 = int(request.form['q9'])
 
-        health = (q1+q2+q3+q4+(q5//20)+q6+q7+q8+q9+q0)/10
+        health = ((q1*10)+q2+q3+q4+q5+q6+q7+q8+q9+q0)/10
 
         # create new entry and add to session
         user_id = current_user._id
