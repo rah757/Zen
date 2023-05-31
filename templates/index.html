@@ -19,7 +19,7 @@
                 <h1>
                     Zen
                 </h1>
-                <p>Hello rah, how are you doing?</p>
+                <p>Hello {{ current_user.username }}, how are you doing?</p>
                 <!-- {% block content %}
                 {% if username %}
                   <h2>Hello {{ username }}, How are you doing today?</h2>
@@ -125,7 +125,9 @@
     </div>
     </div>
     </div>
-
+    <script>
+        var entries = {{ values }};
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../static/js/scriptbarchart.js"></script>
     <script src="../static/js/scripttodo.js"></script>
