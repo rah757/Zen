@@ -31,8 +31,12 @@ const data = {
     }]
 };
 
-for (let i = 0; i < 7; i++) {
-    data["datasets"][0]["data"][i] = entries[i];
+let len = entries.length;
+let numElements = Math.min(7,len);
+let j = 0;
+
+for (let i = len-numElements; i < len; i++, j++) {
+    data["datasets"][0]["data"][j] = entries[i];
 }
 
 //configuration here    
