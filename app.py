@@ -98,7 +98,7 @@ def questions():
         q8 = int(request.form['q8'])
         q9 = int(request.form['q9'])
 
-        health = ((q1*10)+q2+q3+q4+q5+q6+q7+q8+q9+q0)/10
+        health = (q0+q1+q2+(100*(1-(q3/100)))+(100*(1-(q4/100)))+(q5*10)+q6+q7+q8+(100*(q9/12)))/10
 
         # create new entry and add to session
         user_id = current_user._id

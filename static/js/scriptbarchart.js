@@ -8,7 +8,7 @@ const data = {
         borderRadius: 15,
         base: 0,
         hoverBorderRadius: 17,
-        data: [12, 19, 3, 5, 2, 3, 9],
+        data: [0, 0, 0, 0, 0, 0, 0],
         backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(255, 159, 64, 0.2)',
