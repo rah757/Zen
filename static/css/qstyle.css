@@ -1,3 +1,17 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 9px;  /* Remove scrollbar space */
+  background: #f9e2dba2;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(248, 181, 160, 0.801);
+  border-radius: 25px;
+}
+
 body{
     background-color: white;
     font-family: 'Quicksand';
