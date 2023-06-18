@@ -1,2 +1,2 @@
-# mp
-mini project
+# Mini project
+mini project s6 
