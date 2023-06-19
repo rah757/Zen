@@ -139,7 +139,7 @@ h3 {
 
 .half:nth-child(1):hover {
     margin-top: 10px;
-    background-color: blue;
+    background-image: url("../images/sakuralink.jpg");
 }
 
 .half:nth-child(2) {
@@ -148,7 +148,7 @@ h3 {
 
 .half:nth-child(2):hover {
   margin-top: 10px;
-  background-color: black;
+  background-color: #fadad0e5;
 }
 
 p {
@@ -230,7 +230,8 @@ p {
 }
 
 .r1 {
-    background: linear-gradient(113.06deg, #F2E1C1 15.11%, rgba(246, 174, 153, 0.8) 88.91%);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(146deg,  rgba(246, 174, 153, 0.8) 15.11% , #F9E2DB 88.91%);
 }
 
 .card2 {
@@ -432,26 +433,27 @@ a:active {
     font-size: 30px;
     font-weight: 700;
     margin-left: 75px;
+    margin-top: 25px;
   }
   
   .slider li.anim1 {
-    animation: cycle 15s linear infinite;
+    animation: cycle 30s linear infinite;
   }
   
   .slider li.anim2 {
-    animation: cycle2 15s linear infinite;
+    animation: cycle2 30s linear infinite;
   }
   
   .slider li.anim3 {
-    animation: cycle3 15s linear infinite;
+    animation: cycle3 30s linear infinite;
   }
   
   .slider li.anim4 {
-    animation: cycle4 15s linear infinite;
+    animation: cycle4 30s linear infinite;
   }
   
   .slider li.anim5 {
-      animation: cycle5 15s linear infinite;
+      animation: cycle5 30s linear infinite;
     }
   
   .slider:hover li {
