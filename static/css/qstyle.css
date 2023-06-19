@@ -2,7 +2,7 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar { 
   width: 9px;  /* Remove scrollbar space */
   background: #f9e2dba2;  /* Optional: just make scrollbar invisible */
 }

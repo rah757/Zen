@@ -8,7 +8,7 @@ html {
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
 }
 
