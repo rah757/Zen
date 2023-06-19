@@ -133,14 +133,22 @@ h3 {
     font-family: 'Quicksand', sans-serif;
 }
 
-
-
 .half:nth-child(1) {
-    margin-top: 0px;
+    margin-top: 10px;
+}
+
+.half:nth-child(1):hover {
+    margin-top: 10px;
+    background-color: blue;
 }
 
 .half:nth-child(2) {
     margin-bottom: 0px;
+}
+
+.half:nth-child(2):hover {
+  margin-top: 10px;
+  background-color: black;
 }
 
 p {
