@@ -55,10 +55,14 @@ with app.app_context():
 @login_required
 def home():
     values = []
+    sleep = []
     for entry in db_session.execute(select(Entry.health).where(Entry.user_id == current_user._id)):
         values.append(entry[0])
 
-    return render_template('index.html', values=values)
+    for entry in db_session.execute(select(Entry.sleep).where(Entry.user_id == current_user._id)):
+        sleep = [entry] + sleep
+
+    return render_template('index.html', values=values, sleep=sleep)
 
 @app.route("/view")
 def view():
