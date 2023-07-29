@@ -46,6 +46,7 @@ class Entry(Base):
     health = Column(Integer)
     sleep = Column(Integer)
 
-    def __init__(self, user_id, health):
+    def __init__(self, user_id, health, sleep):
         self.user_id = user_id
         self.health = health
+        self.sleep = sleep
