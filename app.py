@@ -102,7 +102,7 @@ def questions():
 
         # create new entry and add to session
         user_id = current_user._id
-        new_entry = Entry(user_id=user_id, health=health)
+        new_entry = Entry(user_id=user_id, health=health, sleep=q9)
         db_session.add(new_entry)
         db_session.commit()
 
