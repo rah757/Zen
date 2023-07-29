@@ -58,7 +58,7 @@ def home():
     for entry in db_session.execute(select(Entry.health).where(Entry.user_id == current_user._id)):
         values.append(entry[0])
 
-    return render_template('index.html', username=current_user.username, values=values)
+    return render_template('index.html', values=values)
 
 @app.route("/view")
 def view():
