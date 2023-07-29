@@ -25,7 +25,7 @@ from flask_security import (
 from datetime import timedelta
 
 from database import db_session, init_db
-from models import User, Role, Entry, Sleep
+from models import User, Role, Entry
 
 from sqlalchemy import select
 
@@ -109,21 +109,6 @@ def questions():
         return redirect(url_for("home"))
 
     return render_template('questions.html')
-
-@app.route("/sleep", methods=["GET","POST"])
-@login_required
-def sleep():
-    if request.method == "POST":
-        sleep = int(request.form['sleep'])
-
-        # create new entry and add to session
-        user_id = current_user._id
-        new_entry = Sleep(user_id=user_id, sleep=sleep)
-        db_session.add(new_entry)
-        db_session.commit()
-        
-        return redirect(url_for("home"))
-    return render_template('sleep.html')
 
 @app.teardown_appcontext
 def shutdown_session(exception=None):

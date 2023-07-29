@@ -44,17 +44,8 @@ class Entry(Base):
     entry_id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey('user._id'), nullable=False)
     health = Column(Integer)
+    sleep = Column(Integer)
 
     def __init__(self, user_id, health):
         self.user_id = user_id
         self.health = health
-
-class Sleep(Base):
-    __tablename__ = 'sleep'
-    entry_id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, ForeignKey('user._id'), nullable=False)
-    sleep = Column(Integer)
-
-    def __init__(self, user_id, sleep):
-        self.user_id = user_id
-        self.sleep = sleep
