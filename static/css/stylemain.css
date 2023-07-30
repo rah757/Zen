@@ -255,12 +255,21 @@ p {
   background:rgba(255, 255, 255, 0.5) url("../images/NGUP.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.69;
+  opacity: 0.9;
   color: transparent;
 }
 
 .third:nth-child(3) {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.third:nth-child(3):hover {
+  margin-top: 0px;
+  background:rgba(255, 255, 255, 0.5) url("../images/eve.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  color: transparent;
 }
 
 .card1 {
