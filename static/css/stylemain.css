@@ -49,6 +49,15 @@ h2 {
     margin-top: -5px;
 }
 
+.heal{
+  margin-left: 37.5%;
+  font-size: 25px;
+}
+
+.slep{
+  margin-left: 2.2%;
+}
+
 h3 {
     font-size: 39px;
     color: white;
@@ -170,6 +179,18 @@ p {
     width:;
 }
 
+.left-type11 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    border-radius: 25px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    width:;
+}
+
 .left-header {
     flex-basis: 90%;
     padding-top: 22px;
@@ -224,6 +245,13 @@ p {
 
 .card1 {
     flex-basis: 55%;
+    background-color: #F9E2DB;
+    align-items: center;
+    justify-content: center;
+}
+
+.card11 {
+    flex-basis: 72%;
     background-color: #F9E2DB;
     align-items: center;
     justify-content: center;
@@ -334,7 +362,7 @@ a:active {
 
 /* bar graph */
 .chart{
-    width: 500px;
+    width: 720px;
     height: 250px;
 }
 
