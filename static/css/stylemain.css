@@ -239,6 +239,22 @@ p {
     margin-top: 0px;
 }
 
+.third:nth-child(1):hover {
+  margin-top: 0px;
+  background:rgba(255, 255, 255, 0.5) url("../images/drumss.jpg");
+  opacity: 0.69;
+  color: transparent;
+}
+
+.third:nth-child(2):hover {
+  margin-top: 0px;
+  background:rgba(255, 255, 255, 0.5) url("../images/NGUP.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.69;
+  color: transparent;
+}
+
 .third:nth-child(3) {
     margin-bottom: 0px;
 }
