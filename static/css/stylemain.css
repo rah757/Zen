@@ -58,6 +58,11 @@ h2 {
   margin-left: 2.2%;
 }
 
+.dep{
+  margin-left: 30%;
+  font-size: 25px;
+}
+
 h3 {
     font-size: 39px;
     color: white;
@@ -269,7 +274,8 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
-  color: transparent;
+  color: white;
+  cursor: pointer
 }
 
 .card1 {

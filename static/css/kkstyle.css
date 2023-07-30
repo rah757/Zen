@@ -3,10 +3,24 @@
     padding: 0; 
     font-family: sans-serif;
 }
+
+body{
+    color: white;
+    font-family: 'Quicksand';
+}
+
+button{
+    font-family: ;
+}
+
+.checkbox-input{
+    border-radius: 50px;
+}
+
 .hero{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../banner.jpeg);
+    background-image: linear-gradient(146deg,  rgba(246, 174, 153, 0.8) 15.11% , #F9E2DB 88.91%);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -16,15 +30,16 @@
     height: 480px;
     position: relative;
     margin: 6% auto;
-    background: #323333;
+    background: #ffb49d;
     padding: 5px;
     overflow: hidden;
+    border-radius: 50px;
 }
 .button-box{
     width: 220px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #000000;
+    box-shadow: 0 0 10px 1px #878787;
     border-radius: 30px;
 }
 .toggle-btn{
@@ -35,13 +50,30 @@
     outline: none;
     position: relative;
 }
+
+input#password.input-field{
+    margin-bottom: 15px;
+}
+
+input.input-field{
+    margin-bottom: 3px;
+}
+
+input.input-field:nth-child(4){
+    margin-bottom: 13px;
+}
+
+button.submit-btn{
+    margin-top: 20px;
+}
+
 #btn{
     top: 0;
     left: 0;
     position: absolute;
     width: 110px;
     height: 100%;
-    background: linear-gradient(to right, #4038a8,#CA98EF);
+    background: white;
     border-radius: 30px;
     transition: .5s;
 }
@@ -70,7 +102,9 @@
     border-top: 0;
     border-right: 0;
     border-bottom: 1px solid #999;
-    background: transparent;
+    background: white;
+    border-radius: 50px;
+    padding-left: 13px;
 }
 .submit-btn{
     width: 85%;
@@ -78,14 +112,20 @@
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right, #4038a8,#CA98EF);
+    background: white;
     border: 0;
     outline: none;
     border-radius: 30px;
+    margin-top: 15px;
 }
 .check-box{
     margin: 30px 10px 30px 0;
 }
+
+#checkidrem{
+    border-radius: 50px;
+}
+
 span{
     color: #777;
     font-size: 12px;
@@ -97,4 +137,8 @@ span{
 }
 #register{
     left: 450px;
+}
+
+#submit{
+    margin-top: 40px;
 }
