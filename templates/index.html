@@ -82,7 +82,11 @@
         </div>
         <div class="left-type1">
             <div class="left-type1s card1 sleep">
-                <h3>{{ sleep[0][0] }}h</h3>
+                <h3>{% if sleep[0][0] is none %}
+                        {{ 0 }}h
+                    {% else %}
+                        {{ sleep[0][0] }}h
+                    {% endif %}</h3>
             </div>
             <div class="left-type1s card2">
                 sleepy tips
