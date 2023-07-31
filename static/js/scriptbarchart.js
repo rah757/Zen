@@ -1,7 +1,7 @@
 //Bar chart js
 // setup data
 const labels = ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7']
-const data = {
+const healthDetails = {
     labels: labels,
     datasets: [{
         label: 'Your average health score',
@@ -36,13 +36,13 @@ let numElements = Math.min(7,len);
 let j = 0;
 
 for (let i = len-numElements; i < len; i++, j++) {
-    data["datasets"][0]["data"][j] = entries[i];
+    healthDetails["datasets"][0]["data"][j] = entries[i];
 }
 
 //configuration here    
-const config = {
+const barChartConfig = {
     type: 'bar',
-    data,
+    data: healthDetails,
     options: {
         scales: {
             y: {
@@ -55,5 +55,5 @@ const config = {
 // rendering stuff
 const myChart = new Chart(
     document.getElementById('myChart'),
-    config
+    barChartConfig
 );
