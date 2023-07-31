@@ -60,7 +60,10 @@ def home():
         values.append(entry[0])
 
     for entry in db_session.execute(select(Entry.sleep).where(Entry.user_id == current_user._id)):
-        sleep = [entry] + sleep
+        entry = [entry[0]]
+        sleep = entry + sleep
+
+    print("Entries:", sleep)
 
     return render_template('index.html', values=values, sleep=sleep)
 
