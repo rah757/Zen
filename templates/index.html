@@ -79,17 +79,14 @@
         </div>
         <div class="left-type1">
             <div class="left-type1s card1 sleep">
-                <h3>{% if sleep %}
-                    {% if sleep[0] is defined and sleep[0][0] is defined %}
-                        {{ sleep[0][0] }}h
+                <h3>
+                    <!-- Handle the case when there is no first element -->
+                    {% if sleep[0] is defined %}
+                        {{ sleep[0] }}h
                     {% else %}
-                        <!-- Handle the case when the list or its first sub-list is empty or not defined -->
                         0h
                     {% endif %}
-                {% else %}
-                    <!-- Handle the case when 'sleep' list is not defined or is None -->
-                    0h
-                {% endif %}</h3>
+                </h3>
             </div>
             <div class="left-type1s card2">
                 <canvas id="chartId" height="234px" width="400px"></canvas>
