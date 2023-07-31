@@ -42,6 +42,11 @@ var sleepChartConfig = {
    data: sleepDetails,
    options: {
       responsive: false,
+      scales: {
+         y: {
+           beginAtZero: true
+         }
+       },
    },
 }
 
