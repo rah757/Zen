@@ -63,8 +63,6 @@ def home():
         entry = [entry[0]]
         sleep = entry + sleep
 
-    print("Entries:", sleep)
-
     return render_template('index.html', values=values, sleep=sleep)
 
 @app.route("/view")
