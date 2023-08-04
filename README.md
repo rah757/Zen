@@ -36,17 +36,16 @@ Zen is a mental health tracker website that serves as your personal companion to
 ## Screenshots
 
 ### Registration and Login
-![register](https://github.com/rah757/miniproject/assets/69799424/bcfae57b-eb89-4495-b845-fc52f9612de5)
-![login](https://github.com/rah757/miniproject/assets/69799424/5fcf1fcd-5a92-4f08-a5b6-6814888dc920)
+![register](https://github.com/rah757/Zen/assets/69799424/030833c8-e5c4-400c-9f5f-f0a7780b9ac1)
+![login](https://github.com/rah757/Zen/assets/69799424/99e4d622-3e9b-42df-a067-0fa213c4b4c2)
 
 ### Homepage
-![Screenshot (1784)](https://github.com/rah757/miniproject/assets/69799424/4cdc89e8-8ef1-4c35-a6b0-6a1f85c2fedb)
-![Screenshot (1785)](https://github.com/rah757/miniproject/assets/69799424/2019b15d-fdd9-4d5a-988c-61e1ad46c093)
-![image](https://github.com/rah757/miniproject/assets/69799424/51bf25bd-6f1d-445c-98a6-b42dec385cb2)
+![Screenshot (1784)](https://github.com/rah757/Zen/assets/69799424/6dafe602-296a-4825-bfd6-18489281c727)
+![Screenshot (1785)](https://github.com/rah757/Zen/assets/69799424/35a56434-5166-4c06-ac03-7b46c6d4ffb6)
+![Screenshot (1801)](https://github.com/rah757/Zen/assets/69799424/48f95313-e14a-4491-8a5b-299ffffeae87)
 
 ### Daily questionnaire page
-![Screenshot (1782)](https://github.com/rah757/miniproject/assets/69799424/fd1ef45d-3ce3-41ef-ac46-edb024d3c47b)
-
+![Screenshot (1751)](https://github.com/rah757/Zen/assets/69799424/f4c6c1e7-29d6-4202-b7c5-3417de5907db)
 
 
 > ### Huge thanks to [sharp](https://github.com/LazarusCat59) for contributing a significant part to this project
