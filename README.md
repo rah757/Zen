@@ -49,7 +49,7 @@ Zen is a mental health tracker website that serves as your personal companion to
 
 
 
-> ### Huge thanks to my [friend](https://github.com/LazarusCat59) for contributing a huge part of this project 
+> ### Huge thanks to [sharp](https://github.com/LazarusCat59) for contributing a significant part to this project
 
 ## Contributing
 
