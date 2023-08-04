@@ -5,11 +5,12 @@ Zen is a mental health tracker website that serves as your personal companion to
 ## Features
 
 - **Mental Health Tracking:** Users can input their mental health data through a series of questions and visualize their progress throughout the week.
-- **Weather Information:** Zen provides real-time weather updates to help users plan their day better.
 - **Notes and To-Do Lists:** Users can keep track of their thoughts and tasks conveniently within the website.
 - **Motivational Quotes:** A carousel of motivational quotes inspires users and uplifts their spirits.
 - **User Authentication:** Secure user authentication using Flask-Security for personalized experiences.
-- **Charts:** Visualize your mental health data with interactive charts created using [Chart.js](https://www.chartjs.org/). 
+- **Charts:** Visualize your mental health data with interactive charts created using [Chart.js](https://www.chartjs.org/).
+- **Music Player:** Listen to chill and relaxing music (contributed by [kkelizz](https://github.com/kkelizzz) [reference](https://www.codewithrandom.com/2023/02/12/simple-html-music-player-music-player-project-in-html-and-css-codewithrandom/)
+- **Weather Information:** Zen provides real-time weather updates to help users plan their day better. (contributed by [Ryan](https://github.com/Monk-e) 
 
 ## Technologies Used
 
