@@ -36,8 +36,8 @@ Zen is a mental health tracker website that serves as your personal companion to
 ## Screenshots
 
 ### Registration and Login
-![register](https://github.com/rah757/miniproject/assets/69799424/1cfc859e-98b9-4943-bab9-c341fbe829ed)
-![login](https://github.com/rah757/miniproject/assets/69799424/a18c9cba-a7e3-48b3-9a67-4842e61145db)
+![register](https://github.com/rah757/miniproject/assets/69799424/bcfae57b-eb89-4495-b845-fc52f9612de5)
+![login](https://github.com/rah757/miniproject/assets/69799424/5fcf1fcd-5a92-4f08-a5b6-6814888dc920)
 
 ### Homepage
 ![Screenshot (1784)](https://github.com/rah757/miniproject/assets/69799424/4cdc89e8-8ef1-4c35-a6b0-6a1f85c2fedb)
