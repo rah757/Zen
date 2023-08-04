@@ -48,6 +48,9 @@ Zen is a mental health tracker website that serves as your personal companion to
 ![Screenshot (1782)](https://github.com/rah757/miniproject/assets/69799424/fd1ef45d-3ce3-41ef-ac46-edb024d3c47b)
 
 
+
+> ### Huge thanks to my [friend](https://github.com/LazarusCat59) for contributing a huge part of this project 
+
 ## Contributing
 
 If you'd like to contribute to Zen, feel free to open a pull request. Bug fixes, feature additions, and improvements are always welcome!
